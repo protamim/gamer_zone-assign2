@@ -47,22 +47,22 @@ section {
   color: var(--primary-black);
 }
 .secondary_btn {
-    margin-top: 1rem;
-    display: inline-block;
-    color: var(--bg-color);
-    background: #fff;
-    padding: 12px 28px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
+  margin-top: 1rem;
+  display: inline-block;
+  color: var(--bg-color);
+  background: #fff;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 .secondary_btn:hover {
-    background: var(--bg-color);
-    color: #fff;
-    border: 1px solid #fdb5b5;
+  background: var(--bg-color);
+  color: #fff;
+  border: 1px solid #fdb5b5;
 }
 
 /* ===========================================================
@@ -391,7 +391,7 @@ Funnly Video Section
 Play Instanly Section 
 =============================================================*/
 .instanly {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 .instanly_container {
   display: flex;
@@ -422,256 +422,342 @@ Play Instanly Section
   width: 100%;
 }
 .instanly_images .small_one {
-    max-width: 168px;
-    width: 100%;
-    height: 50%;
-    object-fit: contain;
-    position: absolute;
-    top: 60%;
-    left: -8%;
+  max-width: 168px;
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  position: absolute;
+  top: 60%;
+  left: -8%;
 }
 
 /* Responsive Play Instanly for large devices  */
-@media only screen and (min-width:840px) {
-    .instanly_container {
-        flex-direction: row;
-    }
-    .instanly_images {
-        max-width: 475px;
-    }
+@media only screen and (min-width: 840px) {
+  .instanly_container {
+    flex-direction: row;
+  }
+  .instanly_images {
+    max-width: 475px;
+  }
 }
 
 /* ===========================================================
 Play Games Online Anywhere, Anytime!
 =============================================================*/
 .game_image .small_one {
-    left: 68%;
+  left: 68%;
 }
 /* Responsive Play Games Online for large devices  */
-@media only screen and (min-width:840px) {
-    .game_online {
-        flex-direction: row-reverse;
-    }
-    .instanly_content .title {
-        margin-bottom: 2rem;
-        font-size: 2.5rem;
-    }
-    .game_image .small_one {
-        left: 78%;
-    }
+@media only screen and (min-width: 840px) {
+  .game_online {
+    flex-direction: row-reverse;
+  }
+  .instanly_content .title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  .game_image .small_one {
+    left: 78%;
+  }
 }
-
 
 /* ===========================================================
 Career Section
 =============================================================*/
 .careers {
-    background: var(--bg-color);
+  background: var(--bg-color);
 }
 .career_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .career_content h2 {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1.1rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
 }
 .career_content > .text {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 2.2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 2.2rem;
 }
 .career_data {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .career_data .data_item > p {
-    margin-bottom: 0.854rem;
-    font-size: 0.85rem;
-    color: #fff;
-    font-weight: 300;
+  margin-bottom: 0.854rem;
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 300;
 }
 .data_loc {
-    text-align: right;
+  text-align: right;
 }
 .career_image {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .career_image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Responsive careers section for tablet devices */
 @media only screen and (min-width: 576px) {
-    .career_content, 
-    .career_image {
-        max-width: 550px;
-        width: 100%;
-    }
-    .career_data .data_item > p {
-        font-size: 1.1rem;
-    }
+  .career_content,
+  .career_image {
+    max-width: 550px;
+    width: 100%;
+  }
+  .career_data .data_item > p {
+    font-size: 1.1rem;
+  }
 }
 /* Responsive careers section for large devices */
 @media only screen and (min-width: 960px) {
-    .career_main {
-        flex-direction: row;
-    }
-    .career_content, 
-    .career_image {
-        flex: 1;
-    }
+  .career_main {
+    flex-direction: row;
+  }
+  .career_content,
+  .career_image {
+    flex: 1;
+  }
 }
-
 
 /* ===========================================================
 Category Section
 =============================================================*/
 .category {
-    background: linear-gradient(45deg, #f1eef8, #fae8e8);
+  background: linear-gradient(45deg, #f1eef8, #fae8e8);
 }
 .category_main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .category_item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.854rem;
-    flex-wrap: nowrap;
-    border-radius: 50px;
-    /* width: 190px; */
-    padding: 6px 8px;
-    background: #fdf8f8;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.854rem;
+  flex-wrap: nowrap;
+  border-radius: 50px;
+  /* width: 190px; */
+  padding: 6px 8px;
+  background: #fdf8f8;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 .category_item .icon {
-    width: 50px;
-    height: auto;
+  width: 50px;
+  height: auto;
 }
 .category_item .name {
-    color: var(--primary-black);
-    font-size: 1rem;
-    font-weight: 700;
+  color: var(--primary-black);
+  font-size: 1rem;
+  font-weight: 700;
 }
 .category_item:hover {
-    border: 1px solid var(--bg-color);
-    cursor: pointer;
+  border: 1px solid var(--bg-color);
+  cursor: pointer;
 }
 /* Responsive Category Section for tablet devices  */
 @media only screen and (min-width: 768px) {
   .category {
     padding: 5rem 0;
   }
-    .category_main {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .category_main {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* Responsive Category Section for desktop devices  */
 @media only screen and (min-width: 1024px) {
-    .category_main {
-        grid-template-columns: repeat(5, 1fr);
-        row-gap: 2rem;
-        align-items: center;
-    }
+  .category_main {
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 2rem;
+    align-items: center;
+  }
 }
-
-
+/* ===========================================================
+Trending Games Section
+=============================================================*/
+.trending {
+  background-color: #3a299f;
+  padding: 4rem 0;
+}
+.trending_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.trending_top .title {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+}
+.trending_top .simple_btn {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.11);
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.trending_top .simple_btn:hover {
+  background-color: var(--bg-color);
+}
+/* Main Area */
+.trending_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.trending_main .item .image {
+  max-width: 400px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 1.4rem;
+}
+.trending_main .image img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.trending_main .image img:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+.trending_main .status {
+  color: #fff;
+  text-align: center;
+}
+.trending_main .status::before {
+  content: "\f004";
+  font: var(--fa-font-solid);
+  margin-right: 8px;
+}
+/* Responsive Trending Games for tablet devices */
+@media only screen and (min-width: 768px) {
+  .trending_main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2rem;
+  }
+  .trending_main .item {
+    width: calc(50% - 1rem);
+  }
+}
+/* Responsive Trending Games for desktop devices */
+@media only screen and (min-width: 992px) {
+  .trending_main {
+    justify-content: space-between;
+  }
+  .trending_main .item {
+    width: calc(25% - 2rem);
+  }
+  .trending_top .title {
+    font-size: 1.7rem;
+  }
+}
 /* ===========================================================
 Footer Section
 =============================================================*/
 .footer_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 3rem 1rem;
-    background: var(--primary-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 3rem 1rem;
+  background: var(--primary-black);
 }
 .footer_inner {
   text-align: center;
 }
 /* Footer Logo */
 .footer_logo {
-    justify-content: center;
-    color: #fff;
-    margin-bottom: 2.4rem;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 2.4rem;
 }
 /* Footer Navigation */
 .footer_inner .footer_menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    margin-bottom: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
 }
 .footer_menu .item {
-    list-style-type: none;
+  list-style-type: none;
 }
 .footer_menu .link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 300;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 300;
+  transition: all 0.3s ease;
 }
 .footer_menu .link:hover {
   color: var(--bg-color);
 }
 /* Footer Social Links */
 .footer_social {
-    margin-bottom: 2.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 .footer_social .social_link {
-    color: #fff;
-    font-size: 2rem;
-    transition: all 0.3s ease;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease;
 }
 .footer_social .social_link:hover {
   color: #c4c2c2;
 }
 /* Footer Additional Links */
 .additional_menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.3rem;
-    margin-bottom: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  margin-bottom: 1.4rem;
 }
 .additional_menu .item {
-    list-style-type: none;
+  list-style-type: none;
 }
 .additional_menu .link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.85rem;
-    font-weight: 300;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 300;
+  transition: all 0.3s ease;
 }
 .additional_menu .link:hover {
   text-decoration: underline;
 }
 /* Footer Bottom text */
 .bottom_text {
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 300;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
