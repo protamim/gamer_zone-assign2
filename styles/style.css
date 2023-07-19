@@ -1,0 +1,677 @@
+/* Google font - Work sans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ===========================================================
+Common sharable components 
+=============================================================*/
+body {
+  font-family: "Work Sans", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+:root {
+  --primary-black: #0b0223;
+  --gradient-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --primary-color: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  --secondary-color: #4ec5f7;
+  --bg-color: #ff42a5;
+}
+section {
+  padding: 3rem 0;
+}
+.primary_btn {
+  background-color: var(--bg-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  display: inline-block;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+.primary_btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--bg-color);
+  color: var(--primary-black);
+}
+.secondary_btn {
+    margin-top: 1rem;
+    display: inline-block;
+    color: var(--bg-color);
+    background: #fff;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+.secondary_btn:hover {
+    background: var(--bg-color);
+    color: #fff;
+    border: 1px solid #fdb5b5;
+}
+
+/* ===========================================================
+Header
+=============================================================*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #3b75f5; */
+  padding: 1rem 0;
+}
+.nav_logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary-black);
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav_logo img {
+  max-width: 60px;
+  width: 100%;
+  margin-right: 0.85rem;
+}
+.nav_logo span {
+  background: var(--primary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu {
+  list-style: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+.menu .nav_item {
+  margin: 0.85rem 0;
+}
+.menu .nav_item .nav_link {
+  text-decoration: none;
+  color: var(--primary-black);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.menu .nav_icons {
+  display: flex;
+  gap: 1rem;
+  background-color: #d1d1d1;
+  padding: 8px 12px;
+}
+.nav_icons .nav_text {
+  color: var(--primary-black);
+  font-weight: 400;
+  font-size: 0.958rem;
+}
+.nav_icons .fa-youtube {
+  color: #eb322b;
+  cursor: pointer;
+}
+.nav_icons .fa-tiktok {
+  color: #131010;
+  cursor: pointer;
+}
+/* Responsive Navbar for tablet and desktop devices */
+@media only screen and (min-width: 768px) {
+  header {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.09);
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    gap: 1.8rem;
+  }
+}
+
+/* ===========================================================
+Banner Section
+=============================================================*/
+.banner_container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.8rem;
+  align-items: center;
+}
+.banner_content {
+  background-image: url(../images/Group\ 14.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 510px;
+  padding: 2rem;
+}
+.section_title {
+  font-size: 1.8rem;
+  color: var(--primary-black);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 0.85rem;
+}
+.banner_title {
+  font-size: 3.2rem;
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.list_container {
+  margin-bottom: 1.3rem;
+}
+.list_item {
+  list-style: none;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--primary-black);
+}
+.list_item i {
+  width: 30px;
+  color: #ff42a5;
+}
+.go_btn {
+  background-color: var(--secondary-color);
+  margin-left: 0.95rem;
+}
+.banner_photo {
+  max-width: 500px;
+  width: 100%;
+}
+.banner_photo img {
+  width: 100%;
+}
+/* Responsive banner section for large devices */
+@media only screen and (min-width: 800px) {
+  .banner_container {
+    flex-direction: row;
+  }
+}
+
+/* ===========================================================
+We are gamer section
+=============================================================*/
+.gamer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.gamer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.gamer_image {
+  max-width: 500px;
+  width: 100%;
+}
+.gamer_image img {
+  width: 100%;
+  height: 100%;
+}
+.gamer_content {
+  width: 90%;
+  text-align: center;
+}
+.gamer_title {
+  text-transform: capitalize;
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.gamer_content .text {
+  color: var(--primary-black);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.95rem;
+}
+.gamer_content .purpose {
+  display: block;
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.gamer_content .quote_text {
+  font-size: 1.4rem;
+  color: var(--primary-black);
+  font-weight: 300;
+  margin-top: 0.75rem;
+}
+/* Responsive We are gamer for all large devices */
+@media only screen and (min-width: 840px) {
+  .gamer_container {
+    flex-direction: row;
+  }
+  .gamer_content {
+    text-align: right;
+  }
+  .gamer_image {
+    max-width: 800px;
+  }
+}
+
+/* ===========================================================
+Funnly Video Section
+=============================================================*/
+.funny {
+  padding-top: 5rem;
+}
+.title {
+  font-size: 1.8rem;
+  color: var(--primary-black);
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+.title .lead_title {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text {
+  color: var(--primary-black);
+  font-size: 0.924rem;
+  text-align: center;
+}
+.funny_container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+.funny_item {
+  text-align: center;
+}
+.funny_item .text {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 1.2rem;
+}
+.funny_inner {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: auto;
+}
+.funny_inner::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+.funny_inner img {
+  width: 100%;
+  height: auto;
+}
+.overlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.3s ease;
+}
+.overlay_content i {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 40px;
+}
+.overlay_content span {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.85rem;
+  display: block;
+}
+/* Hover Effect */
+.funny_inner:hover::before {
+  height: calc(100% - 4px);
+}
+.funny_inner:hover .overlay_content {
+  display: block;
+}
+/* Responsive Online Games Funny videos for tablet devices */
+@media only screen and (min-width: 768px) {
+  .funny_container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 5rem;
+  }
+}
+/* Responsive Online Games Funny videos for large devices */
+@media only screen and (min-width: 992px) {
+  .funny_container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+/* ===========================================================
+Play Instanly Section 
+=============================================================*/
+.instanly {
+    padding-bottom: 5rem;
+}
+.instanly_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.instanly_content .title {
+  margin-bottom: 2rem;
+}
+.instanly_content .title .lead_title {
+  background: var(--primary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instanly_content .text {
+  width: 70%;
+  margin: 0 auto;
+}
+.instanly_images {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+.instanly_images .big_one {
+  width: 100%;
+}
+.instanly_images .small_one {
+    max-width: 168px;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 60%;
+    left: -8%;
+}
+
+/* Responsive Play Instanly for large devices  */
+@media only screen and (min-width:840px) {
+    .instanly_container {
+        flex-direction: row;
+    }
+    .instanly_images {
+        max-width: 475px;
+    }
+}
+
+/* ===========================================================
+Play Games Online Anywhere, Anytime!
+=============================================================*/
+.game_image .small_one {
+    left: 68%;
+}
+/* Responsive Play Games Online for large devices  */
+@media only screen and (min-width:840px) {
+    .game_online {
+        flex-direction: row-reverse;
+    }
+    .instanly_content .title {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    .game_image .small_one {
+        left: 78%;
+    }
+}
+
+
+/* ===========================================================
+Career Section
+=============================================================*/
+.careers {
+    background: var(--bg-color);
+}
+.career_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.career_content h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+}
+.career_content > .text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 2.2rem;
+}
+.career_data {
+    display: flex;
+    justify-content: space-between;
+}
+.career_data .data_item > p {
+    margin-bottom: 0.854rem;
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: 300;
+}
+.data_loc {
+    text-align: right;
+}
+.career_image {
+    width: 100%;
+    text-align: center;
+}
+.career_image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive careers section for tablet devices */
+@media only screen and (min-width: 576px) {
+    .career_content, 
+    .career_image {
+        max-width: 550px;
+        width: 100%;
+    }
+    .career_data .data_item > p {
+        font-size: 1.1rem;
+    }
+}
+/* Responsive careers section for large devices */
+@media only screen and (min-width: 960px) {
+    .career_main {
+        flex-direction: row;
+    }
+    .career_content, 
+    .career_image {
+        flex: 1;
+    }
+}
+
+
+/* ===========================================================
+Category Section
+=============================================================*/
+.category {
+    background: linear-gradient(45deg, #f1eef8, #fae8e8);
+}
+.category_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.category_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.854rem;
+    flex-wrap: nowrap;
+    border-radius: 50px;
+    /* width: 190px; */
+    padding: 6px 8px;
+    background: #fdf8f8;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+.category_item .icon {
+    width: 50px;
+    height: auto;
+}
+.category_item .name {
+    color: var(--primary-black);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.category_item:hover {
+    border: 1px solid var(--bg-color);
+    cursor: pointer;
+}
+/* Responsive Category Section for tablet devices  */
+@media only screen and (min-width: 768px) {
+  .category {
+    padding: 5rem 0;
+  }
+    .category_main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* Responsive Category Section for desktop devices  */
+@media only screen and (min-width: 1024px) {
+    .category_main {
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 2rem;
+        align-items: center;
+    }
+}
+
+
+/* ===========================================================
+Footer Section
+=============================================================*/
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 3rem 1rem;
+    background: var(--primary-black);
+}
+.footer_inner {
+  text-align: center;
+}
+/* Footer Logo */
+.footer_logo {
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 2.4rem;
+}
+/* Footer Navigation */
+.footer_inner .footer_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+.footer_menu .item {
+    list-style-type: none;
+}
+.footer_menu .link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.footer_menu .link:hover {
+  color: var(--bg-color);
+}
+/* Footer Social Links */
+.footer_social {
+    margin-bottom: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer_social .social_link {
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+.footer_social .social_link:hover {
+  color: #c4c2c2;
+}
+/* Footer Additional Links */
+.additional_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+.additional_menu .item {
+    list-style-type: none;
+}
+.additional_menu .link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.additional_menu .link:hover {
+  text-decoration: underline;
+}
+/* Footer Bottom text */
+.bottom_text {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
